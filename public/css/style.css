@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #26232f 16.62%, #ee909c 85.61%);
+
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    justify-content: flex-end;
+}
+
+
+button{
+    transform: translateX(0px);
+    animation: float 5s ease-in-out infinite;
+
+}
+
+@keyframes float {
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-30px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+    
+}
+
+
+
+.cabecalho-menu{
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color:  #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.botaoadd{
+    background-color: #ECD6C4;
+    width: 100px;
+    height: 30px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2F2325;
+}
+
+.botaoadd:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+  }
+
+
+
+.foto-user{
+    width: 80px;
+}
+
+  .conteudo{
+    display:flex;
+    font-family: 'Righteous', cursive;
+    border-top: 0.4px solid #FFF2E7;
+    color: #FFF2E7;
+    margin-bottom: 48px;
+    flex-direction: column;
+    padding: 165px;
+    gap: 40px;
+  
+
+}
+
+.conteudopesq{
+    display:flex;
+    justify-content:center;
+    border:#26232f;
+    height: 100%;
+
+}
+
+th{
+    
+    width: 100px;
+    height: 35px;
+    border: none;
+}

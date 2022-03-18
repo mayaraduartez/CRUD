@@ -1,0 +1,45 @@
+<%-include ("cabecalho.ejs");%>
+<main class="conteudo">
+<form class="conteudopesq" method="post">
+    Pesquisar por:
+    <input type="text" name="pesquisar" enctype="multipart/form-data" placeholder="Digite a palavra para buscar"><br>
+    <select name="tipo">
+        <option value="nome">Nome</option>
+        <option value="email">Email</option>
+    </select><br>
+    <input class="botaoadd" type="submit" value="Pesquisar"><br>
+
+</form>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Senha</th>
+            <th>Foto</th>
+            <th>Editar</th>
+            <th>Deletar</th>
+        </tr>
+        <% Usuarios.forEach(function(usuario){  %>
+        <tr>
+            <td><%=usuario._id%></td>
+            <td><%=usuario.nome%></td>
+            <td><%=usuario.email%></td>
+            <td><%=usuario.senha%></td>
+            <td>
+                <img class="foto-user" src="/fotos/<%=usuario.foto%>"></td>
+            <td>
+                <a href="/edt/<%=usuario._id%>">
+                    <img width="80px" src="/images/edit.png">
+                </a>
+            </td>
+            <td>
+                <a href="/del/<%=usuario._id%>">
+                    <img  width="80px" src="/images/lixeira.png">
+                </a>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+    </main>
+    <%-include("rodape.ejs");%>
