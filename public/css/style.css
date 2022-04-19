@@ -85,12 +85,27 @@ button{
     font-family: 'Righteous', cursive;
     border-top: 0.4px solid #FFF2E7;
     color: #FFF2E7;
-    margin-bottom: 48px;
+    margin: 0px;
+    padding-top: 75px;
     flex-direction: column;
-    padding: 165px;
+    padding-bottom: 17%;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
-  
+}
 
+.conteudoadd{
+    display:flex;
+    font-family: 'Righteous', cursive;
+    border-top: 0.4px solid #FFF2E7;
+    color: #FFF2E7;
+    margin: 0px;
+    padding-top: 75px;
+    flex-direction: column;
+    padding-bottom: 24%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .conteudopesq{
@@ -106,4 +121,8 @@ th{
     width: 100px;
     height: 35px;
     border: none;
+}
+
+input, select{
+    border-radius: 8px;
 }
